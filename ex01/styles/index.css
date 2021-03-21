@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#page-title{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+#gallery{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    height: auto;
+    display:flex;
+    padding: 20px 0 20px 15px;
+
+}
+.column{
+    flex: 25%;
+    max-width: 200px;
+    padding: 0 4px;
+    margin-right: 10px;
+}
+.img-frame{
+    position: relative;
+    width: 200px;
+    height: auto;
+}
+.column img {
+    position: relative;
+    margin-top: 2px;
+    vertical-align: middle;
+    width: 100%;
+}
+.img-title h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
+/* img titles when hover */
+#title1{
+    position:absolute;
+    top: 2px;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 125px;
+    padding: 85px 0 0 20px;
+    cursor: pointer;
+    display: none;
+}
+#title2{
+    position:absolute;
+    top: 2px;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 133px;
+    padding: 100px 0 0 8px;
+    cursor: pointer;
+    display: none;
+}
+#title2 h1{
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+#title3{
+    position:absolute;
+    top: 2px;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 261px;
+    padding: 215px 0 0 35px;
+    cursor: pointer;
+    display: none;
+}
+#title4{
+    position:absolute;
+    top: 2px;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 133px;
+    padding: 95px 0 0 7px;
+    cursor: pointer;
+    display: none;
+}
+#title5{
+    position:absolute;
+    top: 2px;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 300px;
+    padding: 255px 0 0 15px;
+    cursor: pointer;
+    display: none;
+}
+#title6{
+    position:absolute;
+    top: 2px;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 133px;
+    padding: 93px 0 0 25px;
+    cursor: pointer;
+    display: none;
+}
+#title7{
+    position:absolute;
+    top: 2px;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 133px;
+    padding: 93px 0 0 15px;
+    cursor: pointer;
+    display: none;
+}
+#title8{
+    position:absolute;
+    top: 2px;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 300px;
+    padding: 255px 0 0 35px;
+    cursor: pointer;
+    display: none;
+}
+#title9{
+    position:absolute;
+    top: 2px;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 355px;
+    padding: 312px 0 0 45px;
+    cursor: pointer;
+    display: none;
+}
+#title10{
+    position:absolute;
+    top: 2px;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 263px;
+    padding: 220px 0 0 37px;
+    cursor: pointer;
+    display: none;
+}
+/* modal */
+.modal{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content{
+    background-color: #f4f4f4;
+    margin: 30px auto;
+    padding: 0 10px 10px 10px;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+.modal-content p{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+.closeBtn{
+    position: relative;
+    top:0;
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+.closeBtn:hover, .closeBtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+@keyframes modalopen{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
